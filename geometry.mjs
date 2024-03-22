@@ -38,7 +38,11 @@ export class Polygon {
     inputs.pts.forEach((pt) => {
       pt.x = pt.x || 0;
       pt.y = pt.y || 0;
-      this.pts.push(pt);
+      if (this.pts.include(pt)) {
+        inputs.pts.remove(pt);
+      } else {
+        this.pts.push(pt);
+      }
     });
     for (let i = 0; i < this.pts.length; i++) {
       this.sides[i] = new Side({pt1: this.pts[i], pt2: this.pts[i+1] || this.pts[0]});
@@ -50,7 +54,7 @@ export class Polygon {
       side.updateSide();
     });
     for (let i = 0; i < this.sides.length; i++) {
-      pt[i].angle = Math.abs(this.sides[i].lSlope - (this.sides[i+1].lSlope || this.sides[0].lSlope));
+      this.pts[i].angle = Math.abs(this.sides[i].lSlope - (this.sides[i+1].lSlope || this.sides[0].lSlope));
     }
     this.perimeter = this.sides.reduce((acc, side) => acc + side.lLength, 0);
   }
@@ -153,9 +157,9 @@ export class Quadrilateral extends Polygon {
   }
 }
 export class Vector {
-  constructor(i, j) {
-    this.i = i;
-    this.j = j;
+  constructor(inputs) {
+    this.i = inputs.i || 0;
+    this.j = inputs.j || 0;
     this.vSlope = this.j/this.i;
     this.vMagnitude = Math.sqrt(Math.pow(i, 2) + Math.pow(j, 2));
     this.vAngle = Math.atan2(this.j, this.i);
