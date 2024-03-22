@@ -1,12 +1,12 @@
 # AVS Math Library JS
-This is AVS' Math Library for Javascript.
+<p>This is AVS' Math Library for Javascript.</p>
 
 <hr>
 <h1>Algebra.mjs</h1>
-The Algebra Module is for dealing with polynomials
+<p>The Algebra Module is for dealing with polynomials</p>
 <hr>
 <h2>Term Class</h2>
-The Term class is an Object Class given to terms of a polynomial expression.
+<p>The Term class is an Object Class given to terms of a polynomial expression.</p>
 
 <table>
   <tr>
@@ -30,19 +30,19 @@ The Term class is an Object Class given to terms of a polynomial expression.
 </table>
 
 <h3>Term.evaluate(num)</h3>
-The evaluate method will calculate the value of the term when x is a given number.
+<p>The evaluate method will calculate the value of the term when x is a given number.</p>
 
 <h3>Term.toText()</h3>
-The toText method will return the term in a string.
+<p>The toText method will return the term in a string.</p>
 
 <h3>Term.multiply(term2)</h3>
-The multiply method will multiply the Term with the inputted term. If the Term is to be multiplied with a number, set term2.d to 0.
+<p>The multiply method will multiply the Term with the inputted term. If the Term is to be multiplied with a number, set term2.d to 0.</p>
 
 <h3>Term.divide(term2)</h3>
-The divide method will divide the Term with the inputted term. If the Term is to be divided by a number, set term2.d to 0.
+<p>The divide method will divide the Term with the inputted term. If the Term is to be divided by a number, set term2.d to 0.</p>
 <hr>
 <h2>Expression Class</h2>
-The Expression class is an Object Class given to a list of Term Class Objects representing a polynomial expression.
+<p>The Expression class is an Object Class given to a list of Term Class Objects representing a polynomial expression.</p>
 
 <table>
   <tr>
@@ -60,22 +60,22 @@ The Expression class is an Object Class given to a list of Term Class Objects re
 </table>
 
 <h3>Expression.evaluate(num)</h3>
-The evaluate method will calculate the value of the expression when x is a given number.
+<p>The evaluate method will calculate the value of the expression when x is a given number.</p>
 
 <h3>Expression.toText()</h3>
-The toText method will return the term in a string.
+<p>The toText method will return the term in a string.</p>
 
 <h3>Expression.simplify()</h3>
-The simplify method will combine any like terms in the expression.
+<p>The simplify method will combine any like terms in the expression.</p>
 
 <h3>Expression.multiply(term)</h3>
-The multiply method will multiply the Expression with the inputted term. If the Expression is to be multiplied with a number, set term.d to 0.
+<p>The multiply method will multiply the Expression with the inputted term. If the Expression is to be multiplied with a number, set term.d to 0.</p>
 
 <h3>Expression.divide(term)</h3>
-The divide method will divide the Expression with the inputted term. If the Expression is to be divided by a number, set term.d to 0.
+<p>The divide method will divide the Expression with the inputted term. If the Expression is to be divided by a number, set term.d to 0.</p>
 <hr>
 <h2>solveQuadratic(inputs)</h2>
-Returns a list of solutions for a quadratic trinomial given an object with a, b, and c, where ax^2+bx+c=0. If there are no real solutions, it will return an empty list.
+<p>Returns a list of solutions for a quadratic trinomial given an object with a, b, and c, where ax^2+bx+c=0. If there are no real solutions, it will return an empty list.</p>
 
 <h3>Inputs</h3>
 <table>
@@ -106,7 +106,7 @@ Returns a list of solutions for a quadratic trinomial given an object with a, b,
 </table>
 <hr>
 <h2>findEquation(inputs)</h2>
-Returns an expression where expression=0 has the given the list of solutions. If there are no solutions, it will return an expression with the term equivilant of 1.
+<p>Returns an expression where expression=0 has the given the list of solutions. If there are no solutions, it will return an expression with the term equivilant of 1.</p>
 
 <h3>Inputs</h3>
 <table>
@@ -125,7 +125,7 @@ Returns an expression where expression=0 has the given the list of solutions. If
 </table>
 <hr>
 <h2>findSolutionsOfQuadratic(inputs)</h2>
-Returns a list of solutions for a quadratic trinomial (even complex and imaginary ones) given an object with a, b, and c, where ax^2+bx+c=0. If the solutions are imaginary, they will be returned in String form.
+<p>Returns a list of solutions for a quadratic trinomial (even complex and imaginary ones) given an object with a, b, and c, where ax^2+bx+c=0. If the solutions are imaginary, they will be returned in String form.</p>
 
 <h3>Inputs</h3>
 <table>
@@ -157,10 +157,10 @@ Returns a list of solutions for a quadratic trinomial (even complex and imaginar
 
 <hr>
 <h1>Calculus.mjs</h1>
-The Calculus Module is for derivating and integrating polynominals.
+<p>The Calculus Module is for derivating and integrating polynominals.</p>
 <hr>
 <h2>derivativeOf(inputs)</h2>
-Derives Expression, and evaluates it at Number if given.
+<p>Derives Expression, and evaluates it at Number if given.</p>
 
 <h3>Inputs</h3>
 <table>
@@ -186,7 +186,7 @@ Derives Expression, and evaluates it at Number if given.
 
 <hr>
 <h2>integralOf(inputs)</h2>
-Integrates Expression, and evaluates it at Number if given.
+<p>Integrates Expression, and evaluates it at Number if given.</p>
 
 <h3>Inputs</h3>
 <table>
@@ -212,10 +212,10 @@ Integrates Expression, and evaluates it at Number if given.
 
 <hr>
 <h1>Geometry.mjs</h1>
-The Geometry Module is for Point, Line, and Polygon Objects, and can be utilized for graphing.
+<p>The Geometry Module is for Point, Line, and Polygon Objects, and can be utilized for graphing.</p>
 <hr>
 <h2>Point Class</h2>
-The Point class is an Object Class given to points that could be plotted on a graph.
+<p>The Point class is an Object Class given to points that could be plotted on a graph.</p>
 
 <table>
   <tr>
@@ -239,7 +239,7 @@ The Point class is an Object Class given to points that could be plotted on a gr
 </table>
 
 <h3>Point.translate(inputs)</h3>
-Translates the point according to the inputs.
+<p>Translates the point according to the inputs.</p>
 
 <table>
   <tr>
@@ -266,7 +266,7 @@ Translates the point according to the inputs.
 </table>
 <hr>
 <h2>Line Class</h2>
-The Line class is an Object Class given to lines that could be plotted on a graph.
+<p>The Line class is an Object Class given to lines that could be plotted on a graph.</p>
 
 <table>
   <tr>
@@ -290,7 +290,7 @@ The Line class is an Object Class given to lines that could be plotted on a grap
 </table>
 
 <h3>Line.update()</h3>
-Updates the line's other properties.
+<p>Updates the line's other properties.</p>
 
 <table>
   <tr>
@@ -320,7 +320,7 @@ Updates the line's other properties.
 </table>
 
 <h3>Line.translate(inputs)</h3>
-Translates both endpoints according to the inputs.
+<p>Translates both endpoints according to the inputs.</p>
 
 <table>
   <tr>
@@ -347,7 +347,7 @@ Translates both endpoints according to the inputs.
 </table>
 <hr>
 <h2>Side Class (Inherits from Line)</h2>
-The Side class is an Object Class given to lines that form the sides of a polygon.
+<p>The Side class is an Object Class given to lines that form the sides of a polygon.</p>
 
 <table>
   <tr>
@@ -371,7 +371,7 @@ The Side class is an Object Class given to lines that form the sides of a polygo
 </table>
 
 <h3>Side.update()</h3>
-Updates the side's other properties.
+<p>Updates the side's other properties.</p>
 
 <table>
   <tr>
@@ -401,7 +401,7 @@ Updates the side's other properties.
 </table>
 <hr>
 <h2>Polygon Class</h2>
-The Polygon class is an Object Class given to polygons that could be plotted on a graph.
+<p>The Polygon class is an Object Class given to polygons that could be plotted on a graph.</p>
 
 <table>
   <tr>
@@ -419,7 +419,7 @@ The Polygon class is an Object Class given to polygons that could be plotted on 
 </table>
 
 <h3>Polygon.update()</h3>
-Updates the polygon's other properties.
+<p>Updates the polygon's other properties.</p>
 
 <table>
   <tr>
@@ -449,7 +449,7 @@ Updates the polygon's other properties.
 </table>
 
 <h3>Polygon.dialate(inputs)</h3>
-Scales the polygon the given amount from the Dialation Point.
+<p>Scales the polygon the given amount from the Dialation Point.</p>
 
 <table>
   <tr>
@@ -476,7 +476,7 @@ Scales the polygon the given amount from the Dialation Point.
 </table>
 
 <h3>Polygon.rotate(inputs)</h3>
-Rotates the polygon amount from the Rotation Point.
+<p>Rotates the polygon amount from the Rotation Point.</p>
 
 <table>
   <tr>
@@ -503,7 +503,7 @@ Rotates the polygon amount from the Rotation Point.
 </table>
 
 <h3>Polygon.translate(inputs)</h3>
-Translates the polygon according to the inputs.
+<p>Translates the polygon according to the inputs.</p>
 
 <table>
   <tr>
@@ -530,7 +530,7 @@ Translates the polygon according to the inputs.
 </table>
 <hr>
 <h2>Triangle Class (Inherits from Polygon)</h2>
-The Triangle class is an Object Class given to triangles that could be plotted on a graph.
+<p>The Triangle class is an Object Class given to triangles that could be plotted on a graph.</p>
 
 <table>
   <tr>
@@ -548,7 +548,7 @@ The Triangle class is an Object Class given to triangles that could be plotted o
 </table>
 
 <h3>Triangle.update()</h3>
-Updates the triangle's other properties.
+<p>Updates the triangle's other properties.</p>
 
 <table>
   <tr>
@@ -614,7 +614,7 @@ Updates the triangle's other properties.
 </table>
 
 <h3>Triangle.dialate(inputs)</h3>
-Scales the triangle the given amount from the Dialation Point.
+<p>Scales the triangle the given amount from the Dialation Point.</p>
 
 <table>
   <tr>
@@ -641,7 +641,7 @@ Scales the triangle the given amount from the Dialation Point.
 </table>
 
 <h3>Triangle.rotate(inputs)</h3>
-Rotates the triangle amount from the Rotation Point.
+<p>Rotates the triangle amount from the Rotation Point.</p>
 
 <table>
   <tr>
@@ -668,7 +668,7 @@ Rotates the triangle amount from the Rotation Point.
 </table>
 
 <h3>Triangle.translate(inputs)</h3>
-Translates the triangle according to the inputs.
+<p>Translates the triangle according to the inputs.</p>
 
 <table>
   <tr>
@@ -695,7 +695,7 @@ Translates the triangle according to the inputs.
 </table>
 <hr>
 <h2>Quadrilateral Class (Inherits from Polygon)</h2>
-The Quadrilateral class is an Object Class given to quadrilaterals that could be plotted on a graph.
+<p>The Quadrilateral class is an Object Class given to quadrilaterals that could be plotted on a graph.</p>
 
 <table>
   <tr>
@@ -713,7 +713,7 @@ The Quadrilateral class is an Object Class given to quadrilaterals that could be
 </table>
 
 <h3>Quadrilateral.update()</h3>
-Updates the quadrilateral's other properties.
+<p>Updates the quadrilateral's other properties.</p>
 
 <table>
   <tr>
@@ -755,7 +755,7 @@ Updates the quadrilateral's other properties.
 </table>
 
 <h3>Quadrilateral.dialate(inputs)</h3>
-Scales the quadrilateral the given amount from the Dialation Point.
+<p>Scales the quadrilateral the given amount from the Dialation Point.</p>
 
 <table>
   <tr>
@@ -782,7 +782,7 @@ Scales the quadrilateral the given amount from the Dialation Point.
 </table>
 
 <h3>Quadrilateral.rotate(inputs)</h3>
-Rotates the quadrilateral amount from the Rotation Point.
+<p>Rotates the quadrilateral amount from the Rotation Point.</p>
 
 <table>
   <tr>
@@ -809,7 +809,7 @@ Rotates the quadrilateral amount from the Rotation Point.
 </table>
 
 <h3>Quadrilateral.translate(inputs)</h3>
-Translates the quadrilateral according to the inputs.
+<p>Translates the quadrilateral according to the inputs.</p>
 
 <table>
   <tr>
@@ -836,7 +836,7 @@ Translates the quadrilateral according to the inputs.
 </table>
 <hr>
 <h2>Vector Class</h2>
-The Vector class is an Object Class given to vector arrows that could be plotted on a graph.
+<p>The Vector class is an Object Class given to vector arrows that could be plotted on a graph.</p>
 
 <table>
   <tr>
@@ -860,7 +860,7 @@ The Vector class is an Object Class given to vector arrows that could be plotted
 </table>
 
 <h3>Vector.update()</h3>
-Updates the vector's other properties.
+<p>Updates the vector's other properties.</p>
 
 <table>
   <tr>
@@ -890,19 +890,19 @@ Updates the vector's other properties.
 </table>
 
 <h3>Vector.add(vector2)</h3>
-Adds Vector to vector2.
+<p>Adds Vector to vector2.</p>
 
 <h3>Vector.subtract(vector2)</h3>
-Subtracts Vector from vector2.
+<p>Subtracts Vector from vector2.</p>
 
 <h3>Vector.multiply(number)</h3>
-Multiplies Vector by number.
+<p>Multiplies Vector by number.</p>
 
 <h3>Vector.divide(number)</h3>
-Divides Vector by number.
+<p>Divides Vector by number.</p>
 
 <h3>Vector.dotProduct(vector2)</h3>
-Returns the dot product of Vector and vector2.
+<p>Returns the dot product of Vector and vector2.</p>
 
 <h3>Vector.crossProduct(vector2)</h3>
-Returns the cross product of Vector and vector2.
+<p>Returns the cross product of Vector and vector2.</p>
