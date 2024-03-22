@@ -26,36 +26,22 @@ export class Line {
   }
 }
 export class Side extends Line {
-  constructor(inputs) {
-    super(inputs);
-  }
-  update() {
-    super();
-  }
+  constructor(inputs) {super(inputs)}
+  update() {super()}
 }
 export class Polygon {
   constructor(inputs) {
     inputs.pts.forEach((pt) => {
       pt.x = pt.x || 0;
       pt.y = pt.y || 0;
-      if (this.pts.include(pt)) {
-        inputs.pts.remove(pt);
-      } else {
-        this.pts.push(pt);
-      }
+      if (this.pts.include(pt)) {inputs.pts.remove(pt)} else {this.pts.push(pt)}
     });
-    for (let i = 0; i < this.pts.length; i++) {
-      this.sides[i] = new Side({pt1: this.pts[i], pt2: this.pts[i+1] || this.pts[0]});
-    }
+    for (let i = 0; i < this.pts.length; i++) {this.sides[i] = new Side({pt1: this.pts[i], pt2: this.pts[i+1] || this.pts[0]});}
     this.updatePolygon();
   }
   update() {
-    this.sides.forEach((side) => {
-      side.updateSide();
-    });
-    for (let i = 0; i < this.sides.length; i++) {
-      this.pts[i].angle = Math.abs(this.sides[i].lSlope - (this.sides[i+1].lSlope || this.sides[0].lSlope));
-    }
+    this.sides.forEach((side) => {side.updateSide();});
+    for (let i = 0; i < this.sides.length; i++) {this.pts[i].angle = Math.abs(this.sides[i].lSlope - (this.sides[i+1].lSlope || this.sides[0].lSlope))}
     this.perimeter = this.sides.reduce((acc, side) => acc + side.lLength, 0);
   }
   dialate(inputs) {
@@ -81,16 +67,12 @@ export class Polygon {
   translate(inputs) {
     inputs.x = inputs.x || 0;
     inputs.y = inputs.y || 0;
-    this.pts.forEach((pt) => {
-      pt.translate(inputs);
-    });
+    this.pts.forEach((pt) => {pt.translate(inputs)});
   }
 }
 export class Triangle extends Polygon {
   constructor(inputs) {
-    if (inputs.pts.length == 3) {
-      super(inputs);
-    } else {
+    if (inputs.pts.length == 3) {super(inputs);} else {
       throw new Error("Invalid number of points for a triangle");
     }
   }
@@ -105,21 +87,13 @@ export class Triangle extends Polygon {
     this.inradius = 2 * this.area / this.perimeter;
     this.circumradius = (this.sides[0].lLength * this.sides[1].lLength * this.sides[2].lLength) / Math.sqrt((this.sides[0].lLength + this.sides[1].lLength + this.sides[2].lLength) * (this.sides[0].lLength + this.sides[1].lLength - this.sides[2].lLength) * (this.sides[0].lLength - this.sides[1].lLength + this.sides[2].lLength) * (this.sides[1].lLength - this.sides[0].lLength + this.sides[2].lLength));
   }
-  dialate(inputs) {
-    super(inputs);
-  }
-  rotate(inputs) {
-    super(inputs);
-  }
-  translate(inputs) {
-    super(inputs);
-  }
+  dialate(inputs) {super(inputs)}
+  rotate(inputs) {super(inputs)}
+  translate(inputs) {super(inputs)}
 }
 export class Quadrilateral extends Polygon {
   constructor(inputs) {
-    if (inputs.pts.length == 4) {
-      super(inputs);
-    } else {
+    if (inputs.pts.length == 4) {super(inputs)} else {
       throw new Error("Invalid number of points for a quadrilateral");
     }
   }
@@ -146,15 +120,9 @@ export class Quadrilateral extends Polygon {
     }
     this.area = Math.sqrt((this.perimeter/2 - this.sides[0].lLength) * (this.perimeter/2 - this.sides[1].lLength) * (this.perimeter/2 - this.sides[2].lLength) * (this.perimeter/2 - this.sides[3].lLength));
   }
-  dialate(inputs) {
-    super(inputs);
-  }
-  rotate(inputs) {
-    super(inputs);
-  }
-  translate(inputs) {
-    super(inputs);
-  }
+  dialate(inputs) {super(inputs)}
+  rotate(inputs) {super(inputs)}
+  translate(inputs) {super(inputs)}
 }
 export class Vector {
   constructor(inputs) {
