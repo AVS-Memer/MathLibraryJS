@@ -530,7 +530,7 @@ Translates the polygon according to the inputs.
 </table>
 <hr>
 <h2>Triangle Class (Inherits from Polygon)</h2>
-The Triangle class is an Object Class given to triangle that could be plotted on a graph.
+The Triangle class is an Object Class given to triangles that could be plotted on a graph.
 
 <table>
   <tr>
@@ -695,7 +695,7 @@ Translates the triangle according to the inputs.
 </table>
 <hr>
 <h2>Quadrilateral Class (Inherits from Polygon)</h2>
-The Quadrilateral class is an Object Class given to quadrilateral that could be plotted on a graph.
+The Quadrilateral class is an Object Class given to quadrilaterals that could be plotted on a graph.
 
 <table>
   <tr>
@@ -741,7 +741,7 @@ Updates the quadrilateral's other properties.
     <td>The perimeter of the quadrilateral</td>
   </tr>
   <tr>
-    <td>Side Type</td>
+    <td>Type</td>
     <td>String</td>
     <td>Quadrilateral.type</td>
     <td>The type of quadrilateral</td>
@@ -834,3 +834,75 @@ Translates the quadrilateral according to the inputs.
     <td>0</td>
   </tr>
 </table>
+<hr>
+<h2>Vector Class</h2>
+The Vector class is an Object Class given to vector arrows that could be plotted on a graph.
+
+<table>
+  <tr>
+    <th>Attributes</th>
+    <th>Type</th>
+    <th>Variable Name</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td>i</td>
+    <td>Number</td>
+    <td>Vector.i</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>j</td>
+    <td>Number</td>
+    <td>Vector.j</td>
+    <td>0</td>
+  </tr>
+</table>
+
+<h3>Vector.update()</h3>
+Updates the vector's other properties.
+
+<table>
+  <tr>
+    <th>Attributes</th>
+    <th>Type</th>
+    <th>Variable Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Slope</td>
+    <td>Number</td>
+    <td>Line.vSlope</td>
+    <td>Slope of the vector</td>
+  </tr>
+  <tr>
+    <td>Magnitude</td>
+    <td>Number</td>
+    <td>Line.vMagnitude</td>
+    <td>Length of the vector</td>
+  </tr>
+  <tr>
+    <td>Angle</td>
+    <td>Number</td>
+    <td>Line.vAngle</td>
+    <td>Angle of the vector</td>
+  </tr>
+</table>
+
+<h3>Vector.add(vector2)</h3>
+Adds Vector to vector2.
+
+<h3>Vector.subtract(vector2)</h3>
+Subtracts Vector from vector2.
+
+<h3>Vector.multiply(number)</h3>
+Multiplies Vector by number.
+
+<h3>Vector.divide(number)</h3>
+Divides Vector by number.
+
+<h3>Vector.dotProduct(vector2)</h3>
+Returns the dot product of Vector and vector2.
+
+<h3>Vector.crossProduct(vector2)</h3>
+Returns the cross product of Vector and vector2.
