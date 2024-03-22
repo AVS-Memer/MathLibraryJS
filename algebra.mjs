@@ -79,7 +79,7 @@ export class Expression {
     });
   }
 }
-export function factorQuadratic(inputs) {
+export function solveQuadratic(inputs) {
   inputs.a = inputs.a || 1;
   inputs.b = inputs.b || 0;
   inputs.c = inputs.c || 0;
